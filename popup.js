@@ -2,9 +2,6 @@ console.log("Popup Script Fired!");
 
 function startExtension() {
     document.getElementById('start-btn').addEventListener('click', sendMsg);
-}
-
-function stopExtension() {
     document.getElementById('stop-btn').addEventListener('click', stopMsg);
 }
 

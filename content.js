@@ -1,3 +1,8 @@
+let timeOut1 = null;
+let timeOut2 = null;
+let timeOut3 = null;
+let timeOut4 = null;
+
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
     if (message.msg === "start") {
         setInterval(() => {
@@ -26,8 +31,12 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
             }, 4000)
         }, 5000)
     }
-    else
+    else if (message.msg === "stop")
     {
-        console.log("Message received from popup script");
+        console.log("Stop message received");
+        clearInterval(timeOut1);
+        clearInterval(timeOut2);
+        clearInterval(timeOut3);
+        clearInterval(timeOut4);
     }
 });

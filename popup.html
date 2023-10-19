@@ -11,7 +11,7 @@
             --accent-color: rgba(164, 53, 240, 1);
             --accent-color2: rgba(164, 53, 240, 0.5);
             --accent-color3: rgba(241, 104, 105, 0.7);
-            --accent-color4: rgba(241, 104, 105, 1);
+            --accent-color4: rgb(255, 126, 14);
         }
 
         body {
@@ -22,7 +22,7 @@
             height: auto;
             width: 250px;
             font-family: sans-serif;
-            border: 2px solid var(--accent-color3);
+            border: 2px solid var(--accent-color4);
             border-radius: 15px;
             padding: 20px;
             text-transform: capitalize;
@@ -69,11 +69,13 @@
 <body>
     <img src="./icon.png" alt="">
     <div class="info-container">
-        <h4>Chegg Sanp</h4>
-        <p>Skip Questions Automatically</p>
+        <h4>Chegg Snap</h4>
+        <p>Skip Chegg Questions Automatically</p>
     </div>
-    <button id="start-btn">Start Skipping</button>
-    <button id="stop-btn">Stop Skipping</button>
+    <div class="btns">
+        <button id="start-btn">Start</button>
+        <button id="stop-btn">Stop</button>
+    </div>
 </body>
 
 </html>
